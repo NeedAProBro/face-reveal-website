@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph's Face Reveal Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #0073e6;
+            color: white;
+        }
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 300px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .card button {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .card button:hover {
+            background-color: #005bb5;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Joseph's Face Reveal Store</h1>
+        <p>Buy exclusive pictures of Joseph starting at just $5!</p>
+    </div>
+
+    <div class="container">
+        <div class="product">
+            <div class="card">
+                <img src="face-pic1.jpg" alt="Face Pic 1">
+                <h3>Face Pic 1</h3>
+                <p>Price: $5</p>
+                <button onclick="purchase('Face Pic 1', 5)">Buy Now</button>
+            </div>
+
+            <div class="card">
+                <img src="face-pic2.jpg" alt="Face Pic 2">
+                <h3>Face Pic 2</h3>
+                <p>Price: $10</p>
+                <button onclick="purchase('Face Pic 2', 10)">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Joseph's Face Reveal Store. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function purchase(item, price) {
+            alert(`You are purchasing ${item} for $${price}. Payment processing coming soon!`);
+            // Here, you would integrate a payment gateway like Stripe or PayPal.
+        }
+    </script>
+</body>
+</html>
